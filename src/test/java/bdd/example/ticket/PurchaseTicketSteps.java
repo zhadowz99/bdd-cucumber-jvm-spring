@@ -81,7 +81,7 @@ public class PurchaseTicketSteps extends StepsBase {
 
 	@Then("^ticket should have regular price$")
 	public void assertTicketWithoutDiscount() throws Throwable {
-		assertEquals(BigDecimal.ONE, ticket.getDiscount());
+		assertEquals(BigDecimal.ZERO, ticket.getDiscount());
 	}
 
 }
